@@ -20,12 +20,6 @@ body {
 
 
 
-
-
-.service {
-    background-color: rgb(255, 123, 0);
-}
-
 .reserve {
     background-color: rgb(237, 237, 209);
 }
@@ -178,14 +172,37 @@ body {
 }
 
 /* =================Start services */
+.service {
+    grid-column: 2/6 !important;
+}
+
 .service__title {}
 
-.services-sections {}
+.services-sections {
+    display: grid;
+    grid-template-rows: repeat(2, 250px);
+    grid-auto-rows: 250px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 70px;
+    padding-bottom: 70px;
+}
+
 
 .services__box {}
 
-.services__img {}
+.services__img {
+    width: 100%;
+    height: 80%;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
 
-.services__text {}
+.services__text {
+    font-size: 19px;
+    text-align: center;
+}
 
-.text {}
+.text {
+    font-size: 14px;
+    margin-top: .5rem;
+}
