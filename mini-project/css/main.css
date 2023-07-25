@@ -303,7 +303,7 @@ body {
     grid-template-rows: repeat(3, 280px);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
-    padding: 70px 15px;
+    padding: 50px;
     grid-template-areas: "gallery-1 gallery-1 gallery-2"
         "gallery-3 gallery-4 gallery-2"
         "gallery-3 gallery-5 gallery-5";
@@ -359,4 +359,62 @@ body {
             "gallery-4 gallery-4"
             "gallery-5 gallery-5";
     }
+}
+
+/* ======================part footer */
+.footer {
+    margin: 1rem 0;
+    background-color: whitesmoke;
+    border-top: 1px solid black;
+}
+
+.footer-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 7px;
+    padding: 45px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .4s all;
+}
+
+li:hover {
+    color: orange;
+}
+
+.footer__title {
+    color: orange;
+}
+
+.copy {
+    margin-top: 1rem;
+    font-size: 12px;
+    text-align: center;
+}
+
+.copy__text {
+    color: orange;
+}
+
+
+.telegram:hover {
+    color: rgb(0, 94, 255);
+}
+
+.whatsapp:hover {
+    color: rgb(0, 94, 255);
+}
+
+.youtube:hover {
+    color: rgba(255, 0, 0, 0.852);
 }
